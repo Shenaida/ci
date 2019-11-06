@@ -7,8 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class CiApplicationTests {
 
 	@Test
-	void contextLoads() throws Error {
-		throw new Error("error");
+	void contextLoads() {
 	}
 
 }
