@@ -3,7 +3,7 @@ jdk: openjdk11
 sudo: false
 
 install: true
-script: mvn clean install -Dtest=*Test, *IT test
+script: mvn clean install -Dtest=*IT test
 
 cache:
   directories:
