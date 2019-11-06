@@ -26,6 +26,7 @@ public class HelloControllerTests {
     public void getHello() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("deze test moet falen in CI build!")));
+                .andExpect(content().string(equalTo("{\"greeting\":\n" +
+                        "\"Hello, world!\"}")));
     }
 }
