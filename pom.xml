@@ -65,7 +65,7 @@
 				<artifactId>maven-failsafe-plugin</artifactId>
 				<configuration>
 					<includes>
-						<include>**/*IT.java</include>
+						<include>**/*Tests.java</include>
 					</includes>
 				</configuration>
 				<executions>
