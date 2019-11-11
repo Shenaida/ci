@@ -1,7 +1,14 @@
 language: java
 jdk: openjdk11
 
-script: mvn clean install -Dtest=*Test test
+script: 
+  - mvn clean install -Dtest=*Test test
+
+
+cache:
+  directories:
+  - $HOME/.m2
+
 
 # sudo: false
 # dist: trusty
