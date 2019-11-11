@@ -19,5 +19,6 @@ public class DataLoader implements ApplicationRunner {
 
     public void run(ApplicationArguments args) {
         helloRepository.save(new Hello(1L, "Hello World!"));
+        helloRepository.save(new Hello(2L, "Hello two!"));
     }
 }
